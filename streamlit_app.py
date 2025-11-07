@@ -96,8 +96,10 @@ def ask_agent(agent_executor, question: str):
 # 5. Streamlit 메인
 # --------------------------------------------------------------------
 def main():
+   
+    st.image('data/busan.tiff', width=1600)
     st.set_page_config(page_title="부산트립봇", layout="wide", page_icon=":ocean:")
-
+    st.title("안녕하세요! 부산트립봇입니다") 
     # ------------------------------
     # ✅ 배경 이미지 + 글씨 오버레이
     # ------------------------------
@@ -122,10 +124,7 @@ def main():
             text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
         }
         </style>
-        <div class="hero-container">
-            <img src="data/busan.png" class="hero-image">
-            <div class="hero-text">부산트립봇 🌊</div>
-        </div>
+        
     """, unsafe_allow_html=True)
 
     st.markdown('---')
